@@ -1,0 +1,16 @@
+{
+  "name": "firefox-emacs",
+  "version": "0.0.1",
+  "description": "firefox emacs extension",
+  "repository": "git@github.com:ChrisYin/firefox-emacs.git",
+  "author": "Chris Yin <chrisyin.2vv@gmail.com>",
+  "license": "GPLv3",
+  "scripts": {
+    "test": "jsonlint --quiet *.json src/*.json && web-ext lint --warnings-as-errors --no-input=true --source-dir src",
+    "build": "web-ext build --overwrite-dest --no-input=true --source-dir src"
+  },
+  "dependencies": {
+    "jsonlint": "^1.6.3",
+    "web-ext": "^6.5.0"
+  }
+}
